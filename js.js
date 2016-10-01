@@ -29,3 +29,15 @@ $("li").on("click", function(){
 	"use strict";
 	$(this).remove();
 });
+
+
+//empty the list
+//$("#list").empty();
+
+//check if list is empty
+	//if it is, show an empty state screen
+if( !$("#list").is(":visible") ){
+  //alert("hi");
+  var el = "<div>Empty state.</div>";
+  $(el).appendTo(".list-container");
+}
